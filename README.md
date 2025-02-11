@@ -74,7 +74,7 @@ The objective of this assignment was to create and configure multiple virtual ma
   - **Reason:** Bridged mode was chosen so that this VM appears as a full member of the physical network.
 - **VM for Service A (Time Service):**  
   - **Network Mode:** NAT Network (with a custom network configured as 192.34.34.0/24)  
-  - **IP Address:** 192.168.157.252  
+  - **IP Address:** 192.168.157.252  (This IP address can change as its dependent on host OS).
   - **Reason:** NAT mode provides an isolated internal network while still enabling internet connectivity.
 
 ![Network Daigram](Daigram.png)
