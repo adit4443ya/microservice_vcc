@@ -1,5 +1,5 @@
 {
-  "name": "service-b",
+  "name": "service-a",
   "version": "1.0.0",
   "description": "Time service microservice",
   "main": "index.js",

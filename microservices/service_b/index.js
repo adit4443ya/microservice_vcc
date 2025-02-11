@@ -3,15 +3,15 @@ const axios = require('axios');
 const app = express();
 const port = process.env.PORT || 3000;
 
-// Read the URL for Service B from an environment variable.
-// For example, if Service B is hosted on 192.168.15.10, then
-// set SERVICE_B_URL=http://192.168.15.10:3001
-const serviceBUrl = process.env.SERVICE_B_URL || 'http://localhost:3001';
+// Read the URL for Service A from an environment variable.
+// For example, if Service A is hosted on 192.168.15.10, then
+// set SERVICE_A_URL=http://192.168.15.10:3001
+const serviceAUrl = process.env.SERVICE_A_URL || 'http://localhost:3001';
 
 app.get('/greet', async (req, res) => {
     try {
         // Call Service B to get the current time
-        const response = await axios.get(`${serviceBUrl}/time`);
+        const response = await axios.get(`${serviceAUrl}/time`);
         const time = response.data.time;
         res.json({ greeting: `Hello! The current time is ${time}` });
     } catch (error) {

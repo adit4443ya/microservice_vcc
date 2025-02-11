@@ -155,7 +155,7 @@ I developed a simple microservices application using Node.js and Express that co
   const app = express();
   const port = process.env.PORT || 3000;
 
-  // The SERVICE_B_URL should be set to the IP of the VM running Service A.
+  // The SERVICE_A_URL should be set to the IP of the VM running Service A.
   // In our setup, set SERVICE_A_URL=http://192.34.34.4:3001
   const serviceAUrl = process.env.SERVICE_A_URL || 'http://localhost:3001';
 
