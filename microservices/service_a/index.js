@@ -8,5 +8,5 @@ app.get('/time', (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log(`Service B (Time Service) listening on port ${port}`);
+    console.log(`Service A (Time Service) listening on port ${port}`);
 });
